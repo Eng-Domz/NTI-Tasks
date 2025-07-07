@@ -1,0 +1,46 @@
+Write a script that reads from the user his info; validates and displays it with a welcoming message.(name,phone,email,)
+
+function infoTaker(){
+    let name = prompt("Enter your name: ");
+    if(name == null || name == "" || !nameValidator(name)){
+        return;
+    }
+    let age = prompt("Enter your age: ");
+    if(age == null || age == "" || !ageValidator(age)){
+        return;
+    }
+    let email = prompt("Enter your email: ");
+    if(email == null || email == "" || !emailValidator(email)){
+        return;
+    }
+    alert(`Hi ${name}, you are ${age} years old and your email is ${email}.`);    
+    
+}
+function nameValidator(name){
+    let regex = /^[a-zA-Z]+$/;
+    if(name.length < 3 || name.length > 20 || !regex.test(name)){
+        alert("Name is invalid. It must be between 3 and 20 characters long and contain only letters.");
+        return false;
+    }
+    return true;
+}
+function ageValidator(age) {
+    age = parseInt(age);
+    console.log(age);
+
+    if (isNaN(age) || age < 0 || age > 120) {
+        alert("Age is invalid. It must be a number between 0 and 120.");
+        return false;
+    }
+    return true;
+}
+function emailValidator(email){
+    let regex = /^((?!\.)[\w-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/;
+    if(!regex.test(email)){
+        alert("Email is invalid.");
+        return false;
+    }
+    return true;
+}
+//test 
+infoTaker();
