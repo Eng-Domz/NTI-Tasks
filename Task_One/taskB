@@ -1,0 +1,32 @@
+Write a script to determine whether the entered string is palindrome or not. Ask the user whether to consider case of the entered string or not,
+handle both cases in your script i.e. RADAR NOON MOOM are palindrome. Note: raDaR is not a palindrome if user requested considering case of entered string.
+
+function pallindrome(){
+    let str = prompt("Enter a string to check if it is a palindrome:");
+    if(str != null && str != ""){
+        let caseSensitive = confirm("Do you want to check case sensitivity? OK = Yes, Cancel = No.");
+        if(caseSensitive == false){
+            str = str.toLowerCase();
+            for (let i = 0; i < str.length / 2; i++) {
+                if (str[i] !== str[str.length - 1 - i]) {
+                    alert("The string is not a palindrome.");
+                    return;
+                }
+            }
+            alert("The string is a palindrome.");
+            return;
+        }else{
+            for (let i = 0; i < str.length / 2; i++) {
+                if (str[i] !== str[str.length - 1 - i]) {
+                    alert("The string is not a palindrome.");
+                    return;
+                }
+            }
+            alert("The string is a palindrome.");
+            return;
+        }
+    }
+
+}
+//test
+pallindrome();
