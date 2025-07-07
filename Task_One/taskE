@@ -1,0 +1,51 @@
+Fill an array of 3 elements from the user in an html page, and apply each of the following mathematicaloperations on it (+, *, /). 
+//HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Adding - Multipling - Dividing 3 Values</h1>
+        <h3 class="sum"></h3>
+        <h3 class="multiplication"></h3>
+        <h3 class="division"></h3>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+//JS
+let sumline = document.querySelector(".sum");
+let multiplicationline = document.querySelector(".multiplication");
+let divisionline = document.querySelector(".division");
+function operations(){
+    let num1 = prompt("Enter first number: ");
+    let num2 = prompt("Enter second number: ");
+    let num3 = prompt("Enter third number: ");
+    if(num1 === "" || num2 === "" || num3 === ""){
+        alert("Error in input provided");
+        return;
+    }else{
+        num1 = parseFloat(num1);
+        num2 = parseFloat(num2);
+        num3 = parseFloat(num3);
+        if(isNaN(num1) || isNaN(num2) || isNaN(num3)){
+            alert("Please enter valid numbers.");
+            return;
+        }
+        let sum = num1 + num2 + num3;
+        let product = num1 * num2 * num3;
+        let division = num1 / num2 / num3;
+        
+        sumline.innerHTML = `sum of the 3 values = ${sum}`;
+        multiplicationline.innerHTML = `multiplication of the 3 values = ${product}`;
+        divisionline.innerHTML = `division of the 3 values = ${division}`;
+    }
+}
+//test
+operations();
