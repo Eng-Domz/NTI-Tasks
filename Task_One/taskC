@@ -1,0 +1,22 @@
+write a script that accepts a string from user through prompt and count the number of ‘e’ characters in it.
+
+function eCounter(){
+    let count = 0;
+    let regex = /^[a-zA-Z]+$/;
+    let str = prompt("Enter a string:");
+    if(str == null || str == "" || !regex.test(str)){
+        alert("Error in input provided");
+        return;
+    }else{
+        for(let i = 0 ; i < str.length ; i++){
+        if(str[i].toLowerCase() === 'e'){
+            count++;
+        }
+        }
+        alert(`The letter e appears ${count} times in ${str}.`);
+        return;
+    }
+    
+}
+// //test
+eCounter();
