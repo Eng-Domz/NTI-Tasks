@@ -1,0 +1,17 @@
+Write your own function that can add n values ensure that all passing parameters are
+numerical values only. 
+
+function adder(args){
+    let sum = 0;
+    for (let i = 0; i < args.length; i++) {
+        if (typeof args[i] !== 'number') {
+            return "error"
+        }else{
+            sum += args[i];
+        }
+    }
+    return sum;
+}
+//test 
+let numbers = [1, 2, 3, 4, 5];
+console.log(adder(numbers));
