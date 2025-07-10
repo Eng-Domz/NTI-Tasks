@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="calculator">
+        <label for="selection">Shape Calculator</label>
+        <select id="selection">
+            <option value="" selected>Choose a Shape</option>
+            <option value="circle">Circle</option>
+            <option value="rectangle">Rectangle</option>
+            <option value="square">Square</option>
+        </select>
+        <div class="inputs">
+            <div id="circleInputs" class="circleInputs hidden">
+                <label for="radius">Radius</label>
+                <input type="text" id="radius" placeholder="Enter radius">
+            </div>
+            <div id="rectangleInputs" class="rectangleInputs hidden">
+                <label for="length">Length</label>
+                <input type="text" id="length" placeholder="Enter length">
+                <label for="width">Width</label>
+                <input type="text" id="width" placeholder="Enter width">
+            </div>
+            <div id="squareInputs" class="squareInputs hidden">
+                <label for="side">Side</label>
+                <input type="text" id="side" placeholder="Enter side length">
+            </div>
+        </div>
+        <button id="calculate" class="disabled">Calculate</button>
+        <div class="output">
+            <h3>Results:</h3>
+            <div id="results" class="results-area">
+                
+            </div>
+        </div>
+    </div>
+
+   
+    <script type="module" src="index.js"></script>
+</body>
+</html>
