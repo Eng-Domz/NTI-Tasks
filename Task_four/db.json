@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "title": "Introduction to Programming",
+        "description": "Learn the basics of programming with Python.",
+        "price": 0
+    },
+    {
+        "id": 2,
+        "title": "Web Development Fundamentals",
+        "description": "Build your first website using HTML, CSS, and JavaScript.",
+        "price": 49.99
+    },
+    {
+        "id": 3,
+        "title": "Data Science with R",
+        "description": "Explore data analysis and visualization techniques using R.",
+        "price": 39.99
+    },
+    {
+        "id": 4,
+        "title": "Machine Learning Basics",
+        "description": "An introduction to machine learning concepts and algorithms.",
+        "price": 19.99
+    },
+    {
+        "id": 5,
+        "title": "Mobile App Development",
+        "description": "Create mobile applications for Android and iOS platforms.",
+        "price": 29.99
+    },
+    {
+        "id": 6,
+        "title": "Frontend fundamentals",
+        "description": "Learn the core concepts of frontend development using React.",
+        "price": 0
+    }
+]
