@@ -1,0 +1,32 @@
+[
+  {
+    "username": 1,
+    "title": "backend",
+    "content": "this is a backend course patched"
+  },
+  {
+    "username": 2,
+    "title": "frontend",
+    "content": "this is a frontend course"
+  },
+  {
+    "username": 3,
+    "title": "fullstack",
+    "content": "this is a fullstack course"
+  },
+  {
+    "username": 4,
+    "title": "Ai",
+    "content": "this is an Ai course"
+  },
+  {
+    "username": 5,
+    "title": "Ai2",
+    "content": "this is an Ai course"
+  },
+  {
+    "username": 7,
+    "title": "Testt edit22",
+    "content": "this is an test edit course"
+  }
+]
