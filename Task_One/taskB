@@ -1,5 +1,5 @@
-Write a script to determine whether the entered string is palindrome or not. Ask the user whether to consider case of the entered string or not,
-handle both cases in your script i.e. RADAR NOON MOOM are palindrome. Note: raDaR is not a palindrome if user requested considering case of entered string.
+// Write a script to determine whether the entered string is palindrome or not. Ask the user whether to consider case of the entered string or not,
+// handle both cases in your script i.e. RADAR NOON MOOM are palindrome. Note: raDaR is not a palindrome if user requested considering case of entered string.
 
 function pallindrome(){
     let str = prompt("Enter a string to check if it is a palindrome:");
