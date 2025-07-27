@@ -1,24 +1,27 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { CardsComponent } from './cards/cards';
 import { NavBarComponent } from './nav-bar/nav-bar';
 import { DataUserComponent } from './data-user/data-user.component';
-
-import { routes } from './app.routes';
+import { LoginComponent } from './login/login.component';
+import { AppRoutingModule } from './app.routes';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardsComponent,
     NavBarComponent,
-    DataUserComponent
+    DataUserComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    ReactiveFormsModule,
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

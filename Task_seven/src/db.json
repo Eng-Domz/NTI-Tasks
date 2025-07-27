@@ -1,0 +1,10 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "adham",
+            "image": "/adham.jpg",
+            "password": "123456"
+        }
+    ]
+}
